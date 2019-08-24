@@ -1,0 +1,81 @@
+{
+  "name": "starter-project-front",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "del-dist": "lerna exec --parallel -- del-cli dist",
+    "prebuild": "yarn del-dist & run-p tsc lint test",
+    "build": "lerna exec --parallel 'BABEL_ENv=build babel --root-mode upward src --out-dir dist --source-maps --extensions .ts,.tsx --delete-dir-on-start  --no-comments",
+    "lint": "run-p -c lint:*",
+    "lint:ts": "run-p -c lint:ts-*",
+    "lint:ts-prod": "tslint --config tslint.prod.json 'packages/**/*.ts{,x}' --exclude '**/*.{test,story}.ts{,x}'",
+    "lint:ts-test": "tslint --config tslint.test.json 'packages/**/*.{test,spec,story}.ts{,x}'",
+    "lint:css": "stylelint 'packages/**/*.ts{,x}'",
+    "test": "jest",
+    "tsc": "tsc",
+    "storybook": "start-storybook -p 9009",
+    "build-storybook": "build-storybook",
+    "commit": "git-cz"
+  },
+  "dependencies": {
+    "babel-minify": "^0.5.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@storybook/addon-info": "^5.1.11",
+    "@storybook/addon-knobs": "^5.2.0-beta.40",
+    "@types/enzyme": "^3.10.3",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.2",
+    "@types/react": "^16.9.2",
+    "@types/storybook__addon-actions": "^3.4.3",
+    "@types/storybook__addon-knobs": "^5.0.3",
+    "@types/storybook__addon-links": "^3.3.5",
+    "@types/storybook__react": "^4.0.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.9.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "commitizen": "^4.0.3",
+    "cz-lerna-changelog": "^2.0.0",
+    "del-cli": "^2.0.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "enzyme-to-json": "^3.0.0-beta6",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0",
+    "lerna": "^3.15.0",
+    "moment": "^2.24.0",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.18.2",
+    "react": "^16.9.0",
+    "react-docgen-typescript-loader": "^3.1.1",
+    "react-dom": "^16.9.0",
+    "react-scripts": "^3.1.1",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.8.0",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.19.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
