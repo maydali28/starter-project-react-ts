@@ -17,7 +17,9 @@
     "tsc": "tsc",
     "storybook": "start-storybook -p 9009",
     "build-storybook": "build-storybook",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "prerelease": "yarn build",
+    "release":"learna publish"
   },
   "dependencies": {
     "babel-minify": "^0.5.1"
