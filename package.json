@@ -1,5 +1,5 @@
 {
-  "name": "starter-project-front",
+  "name": "root",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -19,10 +19,11 @@
     "build-storybook": "build-storybook",
     "commit": "git-cz",
     "prerelease": "yarn build",
-    "release":"learna publish"
+    "release": "lerna publish"
   },
-  "dependencies": {
-    "babel-minify": "^0.5.1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maydali28/starter-project-react-ts"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
@@ -31,8 +32,11 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
-    "@storybook/addon-info": "^5.1.11",
+    "@storybook/addon-actions": "^5.2.0-beta.40",
     "@storybook/addon-knobs": "^5.2.0-beta.40",
+    "@storybook/addon-links": "^5.2.0-beta.40",
+    "@storybook/addons": "^5.2.0-beta.40",
+    "@storybook/react": "^5.2.0-beta.40",
     "@types/enzyme": "^3.10.3",
     "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/jest": "^24.0.18",
@@ -43,8 +47,9 @@
     "@types/storybook__addon-links": "^3.3.5",
     "@types/storybook__react": "^4.0.2",
     "awesome-typescript-loader": "^5.2.1",
-    "babel-core": "^6.26.3",
+    "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^24.9.0",
+    "babel-loader": "8.0.4",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "commitizen": "^4.0.3",
     "cz-lerna-changelog": "^2.0.0",
@@ -59,10 +64,9 @@
     "node-sass": "^4.12.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
-    "react": "^16.9.0",
+    "react": "^16.4.1",
     "react-docgen-typescript-loader": "^3.1.1",
     "react-dom": "^16.9.0",
-    "react-scripts": "^3.1.1",
     "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0",
     "stylelint-config-styled-components": "^0.1.1",
@@ -79,5 +83,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "resolutions": {
+    "babel-core": "^7.0.0-bride.0"
   }
 }

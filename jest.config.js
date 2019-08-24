@@ -27,27 +27,25 @@ module.exports = {
   coverageDirectory: "coverage",
 
   // An array of regexp pattern strings used to skip coverage collection
-  coveragePathIgnorePatterns: [
-    "/node_modules/"
-  ],
+  coveragePathIgnorePatterns: ["/node_modules/"],
 
   // A list of reporter names that Jest uses when writing coverage reports
-   coverageReporters: [
-  //   "json",
-     "text",
-  //   "lcov",
-     "clover"
-   ],
+  coverageReporters: [
+    //   "json",
+    "text",
+    //   "lcov",
+    "clover",
+  ],
 
   // An object that configures minimum threshold enforcement for coverage results
-   coverageThreshold: {
-     global: {
-       branches: 80,
-       functions: 80,
-       lines: 80,
-       statements: 80,
-     },
-   },
+  coverageThreshold: {
+    global: {
+      branches: 80,
+      functions: 80,
+      lines: 80,
+      statements: 80,
+    },
+  },
 
   // A path to a custom dependency extractor
   // dependencyExtractor: null,
@@ -65,11 +63,11 @@ module.exports = {
   // globalTeardown: null,
 
   // A set of global variables that need to be available in all test environments
-   globals: {
-     'ts-jest': {
-       extends : './babel.config.js'
-     }
-   },
+  globals: {
+    "ts-jest": {
+      extends: "./babel.config.js",
+    },
+  },
 
   // The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
   // maxWorkers: "50%",
@@ -80,14 +78,14 @@ module.exports = {
   // ],
 
   // An array of file extensions your modules use
-   moduleFileExtensions: [
-     "js",
-  //   "json",
-  //   "jsx",
-     "ts",
-     "tsx",
-  //   "node"
-   ],
+  moduleFileExtensions: [
+    "js",
+    //   "json",
+    //   "jsx",
+    "ts",
+    "tsx",
+    //   "node"
+  ],
 
   // A map from regular expressions to module names that allow to stub out resources with a single module
   // moduleNameMapper: {},
@@ -96,10 +94,10 @@ module.exports = {
   // modulePathIgnorePatterns: [],
 
   // Activates notifications for test results
-   notify: true,
+  notify: true,
 
   // An enum that specifies notification mode. Requires { notify: true }
-   notifyMode: "always",
+  notifyMode: "always",
 
   // A preset that is used as a base for Jest's configuration
   // preset: null,
@@ -126,9 +124,7 @@ module.exports = {
   // rootDir: null,
 
   // A list of paths to directories that Jest should use to search for files in
-   roots: [
-     "<rootDir>packages"
-   ],
+  roots: ["<rootDir>packages"],
 
   // Allows you to use a custom runner instead of Jest's default test runner
   // runner: "jest-runner",
@@ -137,10 +133,10 @@ module.exports = {
   // setupFiles: [],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
-  setupFilesAfterEnv: ['<rootDir>jest/setupTests.ts'],
+  setupFilesAfterEnv: ["<rootDir>jest/setupTests.ts"],
 
   // A list of paths to snapshot serializer modules Jest should use for snapshot testing
-   snapshotSerializers: ['enzyme-to-json/serializer'],
+  snapshotSerializers: ["enzyme-to-json/serializer"],
 
   // The test environment that will be used for testing
   testEnvironment: "node",
@@ -152,11 +148,11 @@ module.exports = {
   // testLocationInResults: false,
 
   // The glob patterns Jest uses to detect test files
-   testMatch: [
-  //   "**/__tests__/**/*.[jt]s?(x)",
-  //   "**/?(*.)+(spec|test).[tj]s?(x)"
-     "**/?(*.)+(spec|test).ts?(x)"
-   ],
+  testMatch: [
+    //   "**/__tests__/**/*.[jt]s?(x)",
+    //   "**/?(*.)+(spec|test).[tj]s?(x)"
+    "**/?(*.)+(spec|test).ts?(x)",
+  ],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   // testPathIgnorePatterns: [
@@ -179,9 +175,9 @@ module.exports = {
   // timers: "real",
 
   // A map from regular expressions to paths to transformers
-   transform: {
-     '^.+\\.(ts|tsx)$': 'ts-jest'
-   },
+  transform: {
+    "^.+\\.(ts|tsx)$": "ts-jest",
+  },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
   // transformIgnorePatterns: [

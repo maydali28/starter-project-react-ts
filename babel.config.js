@@ -4,16 +4,16 @@ module.exports = (api) => {
   return {
     presets: [
       [
-        "@babel/env",
+        "@babel/preset-env",
         {
           targets: {
             browsers: "Last 2 Chrome versions, Firefox ESR",
-            node: "8.9",
+            node: "10.15",
           },
         },
       ],
       [
-        "@babel/preet-rev",
+        "@babel/preset-react",
         {
           development: process.env.BABEL_ENV !== "build",
         },
