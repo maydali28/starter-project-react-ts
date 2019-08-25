@@ -1,6 +1,6 @@
 {
   "name": "@taxi/login-form",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "dist/index.ts",
   "types": "dist/inde.d.js",
   "files": [
@@ -24,6 +24,6 @@
     "styled-components": "^4.3.2"
   },
   "dependencies": {
-    "@taxi/input": "^0.0.1"
+    "@taxi/input": "^0.0.2"
   }
 }
