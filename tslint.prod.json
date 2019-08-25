@@ -1,6 +1,9 @@
 {
-    "extends": ["./tslint.json"],
-    "rules": {
-        "no-implicit-dependencies": true
-    }
+  "extends": ["./tslint.json"],
+  "rules": {
+    "no-implicit-dependencies": true
+  },
+  "linterOptions": {
+    "exclude": ["**/*.d.ts", "**/*.{test,story,spec}.ts{,x}"]
+  }
 }

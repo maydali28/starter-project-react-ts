@@ -13,6 +13,7 @@
     "rootDir": "./",
     "baseUrl": ".",
     "paths": {
+      "@taxi/*": ["packages/*/src"],
       "*": ["node_modules", "packages"]
     }
   },

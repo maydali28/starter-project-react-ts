@@ -2,14 +2,17 @@
   "name": "@taxi/input",
   "version": "0.0.1",
   "description": "input component",
-  "main": "/dist/index.ts",
-  "types": "dist/inde.d.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
   "files": [
     "dist"
   ],
   "repository": {
     "type": "git",
-    "url": "github.com"
+    "url": "https://github.com/maydali28/starter-project-react-ts"
+  },
+  "scripts": {
+    "build": "BABEL_ENV=build babel src --root-mode upward --out-dir dist --source-maps --extensions .ts,.tsx --delete-dir-on-start --no-comments"
   },
   "author": "dali",
   "license": "MIT",
