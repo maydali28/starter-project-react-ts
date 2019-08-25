@@ -3,8 +3,10 @@
     "noEmit": true,
     "strict": true,
     "jsx": "react",
+    "types": ["react", "jest"],
     "target": "esnext",
     "module": "esnext",
+    "noImplicitAny": false,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "removeComments": true,
@@ -14,7 +16,7 @@
       "*": ["node_modules", "packages"]
     }
   },
-  "awesomTypescriptLoaderOptions": {
+  "awesomeTypescriptLoaderOptions": {
     "useBabel": true,
     "babelCore": "@babel/core"
   },

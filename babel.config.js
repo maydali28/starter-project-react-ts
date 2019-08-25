@@ -4,11 +4,11 @@ module.exports = (api) => {
   return {
     presets: [
       [
-        "@babel/preset-env",
+        "@babel/env",
         {
           targets: {
             browsers: "Last 2 Chrome versions, Firefox ESR",
-            node: "10.15",
+            node: "current",
           },
         },
       ],

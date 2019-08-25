@@ -1,3 +1,4 @@
 {
-    "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "tslint.configFile": "/home/dali/workspace/starter-project-react/tslint.json"
 }

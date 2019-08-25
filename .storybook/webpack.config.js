@@ -1,6 +1,6 @@
 module.exports = ({ config }) => {
   config.module.rules.push({
-    test: /\.(spec\test).tsx?$/,
+    test: /\.(tsx|ts)$/,
     use: [
       {
         loader: require.resolve("awesome-typescript-loader"),

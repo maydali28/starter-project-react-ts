@@ -1,0 +1,25 @@
+{
+  "name": "@taxi/input",
+  "version": "0.0.0",
+  "description": "input component",
+  "main": "/dist/index.ts",
+  "types": "dist/inde.d.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "github.com"
+  },
+  "author": "dali",
+  "license": "MIT",
+  "private": true,
+  "peerDependencies": {
+    "@types/styled-components": "^4.1.18",
+    "react": "^16.9.0",
+    "styled-components": "^4.3.2"
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  }
+}
