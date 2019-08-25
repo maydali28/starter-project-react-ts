@@ -1,6 +1,6 @@
 {
   "name": "@taxi/input",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "input component",
   "main": "/dist/index.ts",
   "types": "dist/inde.d.js",
