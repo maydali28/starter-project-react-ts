@@ -16,7 +16,7 @@
   },
   "author": "dali",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "peerDependencies": {
     "@types/styled-components": "^4.1.18",
     "react": "^16.9.0",
